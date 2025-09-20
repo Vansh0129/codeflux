@@ -1,22 +1,47 @@
-{% extends 'base.html' %}
-{%block content%}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset class="fieldset">
+  <div class="tablink">
+    <a href="instructorAdd.html">
+      <h1 onclick="openPage('new')" id="defaultOpen">Add Instructor</h1>
+    </a>
+    <h1 onclick="openPage('edit')" id="link_to_edit">Edit Instructor</h1>
+  </div>
+  <div class="tabcontent" id="edit">
+    <table class="editTable">
+      <thead>
+        <tr class="table-headers">
+          <th>UID</th>
+          <th>Name</th>
+          <th class="empty"></th>
+        </tr>
+      </thead>
 
+      <tbody>
+        {% for inst in instructors %}
+        <tr>
+          <td>{{inst.uid}}</td>
+          <td>{{inst.name}}</td>
+          <td class="empty">
+            <form action="{% url 'deleteinstructor' inst.id %}" method="post">
+              {% csrf_token %}
+              <input type="submit" value="X" class="cross">
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
 
-<form method="post">
-  {% csrf_token %}
-  <fieldset>
-    <div class="tablink">
-      <h1 onclick="openPage('new')" id="defaultOpen">Add Meeting time</h1>
-      <a href="{% url 'meetingTimeEdit' %}">
-        <h1 onclick="openPage('edit')" id="link_to_edit">Edit Meeting time</h1>
-      </a>
-    </div>
-    <div class="tabcontent" id="new">
-      {{ form.as_p }}
-      <input type="submit" value="Submit" class="submit">
-    </div>
-  </fieldset>
-</form>
+    </table>
+  </div>
+</fieldset>
 
-{% endblock %}
+</body>
+</html>

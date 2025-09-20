@@ -1,15 +1,21 @@
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
 
 
 
-<form method="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <form method="post">
   {% csrf_token %}
   <fieldset>
     <div class="tablink">
       <h1 onclick="openPage('new')" id="defaultOpen">Add Instructor</h1>
-      <a href="{% url 'instructorEdit' %}">
+      <a href="instructorEdit.html">
         <h1 onclick="openPage('edit')" id="link_to_edit">Edit Instructor</h1>
       </a>
     </div>
@@ -20,4 +26,5 @@
   </fieldset>
 </form>
 
-{% endblock %}
+</body>
+</html>

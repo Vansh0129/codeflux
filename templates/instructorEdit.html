@@ -1,13 +1,18 @@
-{% extends 'base.html' %}
-{% block content %}
-{% load static %}
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
 
 
 <fieldset class="fieldset">
   <div class="tablink">
-    <a href="{% url 'instructorAdd'%}">
+    <a href="instructorAdd.html">
       <h1 onclick="openPage('new')" id="defaultOpen">Add Instructor</h1>
     </a>
     <h1 onclick="openPage('edit')" id="link_to_edit">Edit Instructor</h1>
@@ -41,4 +46,5 @@
   </div>
 </fieldset>
 
-{% endblock %}
+</body>
+</html>

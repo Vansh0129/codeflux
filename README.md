@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 # TEAM FUSION
 =======
 # Timetable Scheduler
 ### An intelligent timetable generator that generates University timetable using `Genetic Algorithm`.
 
 #### Dependencies:
-<<<<<<< HEAD
  1. python 3.6 or above
  2. Django 2.0 or above
 
@@ -34,7 +33,6 @@ project uses genetic algorithm to satisfy the constraints related to Timetable s
 | Class timing for each teacher is unique           |
 | Teachers are allocated to their course accordingly|
 
-<<<<<<< HEAD
 ## Screenshots
 
 [![1](./assets/img/1.png)](#)

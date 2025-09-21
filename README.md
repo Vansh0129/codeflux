@@ -34,12 +34,11 @@ project uses genetic algorithm to satisfy the constraints related to Timetable s
 ## Screenshots
 
 [![1](/templates/assets/img/1.png)](#)
-[![2](.templates/assets/img/2.png)](#)
-[![3](.templates/assets/img/3.png)](#)
-[![4](.templates/assets/img/4.png)](#)
-[![5](.templates/assets/img/5.png)](#)
-[![6](.templates/assets/img/6.png)](#)
-[![7](.templates/assets/img/7.png)](#)
-[![8](.templates/assets/img/8.png)](#)
+[![2](templates/assets/img/2.png)](#)
+[![3](templates/assets/img/3.png)](#)
+[![4](templates/assets/img/4.png)](#)
+[![5](templates/assets/img/5.png)](#)
+[![6](templates/assets/img/6.png)](#)
+[![7](templates/assets/img/7.png)](#)
+[![8](templates/assets/img/8.png)](#)
 
-=======

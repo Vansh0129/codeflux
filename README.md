@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# codeflux
+# TEAM FUSION
 =======
 # Timetable Scheduler
 ### An intelligent timetable generator that generates University timetable using `Genetic Algorithm`.
